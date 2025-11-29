@@ -10,6 +10,18 @@ const Hero = () => {
       
       <div className="container-custom relative z-10">
         <div className="max-w-4xl mx-auto text-center">
+          {/* Profile Photo */}
+          <div className="mb-8 animate-fade-in">
+            <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full border-4 border-primary/50 overflow-hidden bg-card relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent" />
+              <div className="w-full h-full flex items-center justify-center">
+                <span className="text-4xl md:text-5xl font-bold text-primary">KK</span>
+              </div>
+              {/* Replace the div above with an img tag when you have your photo */}
+              {/* <img src="/your-photo.jpg" alt="Kaif Khurshid" className="w-full h-full object-cover" /> */}
+            </div>
+          </div>
+
           {/* Greeting */}
           <p className="text-primary font-mono text-sm md:text-base mb-4 animate-fade-in">
             Hi, my name is
@@ -100,13 +112,6 @@ const Hero = () => {
               Get In Touch
             </a>
           </div>
-        </div>
-      </div>
-      
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
-        <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-primary rounded-full animate-bounce" />
         </div>
       </div>
     </section>
