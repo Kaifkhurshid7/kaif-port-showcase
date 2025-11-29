@@ -25,7 +25,7 @@ const Navigation = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/80 backdrop-blur-lg border-b border-border"
+          ? "bg-black/90 backdrop-blur-xl border-b border-border/50"
           : "bg-transparent"
       }`}
     >
@@ -33,30 +33,27 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           <a
             href="#"
-            className="text-xl font-bold text-foreground hover:text-primary transition-colors"
+            className="text-xl font-bold text-foreground hover:text-primary transition-colors tracking-tight"
           >
-            <span className="text-primary">&lt;</span>
-            KK
-            <span className="text-primary">/&gt;</span>
+            Kaif<span className="text-primary">.</span>
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group"
+                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-card/50"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
             <a
               href="/Kaif_Khurshid_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 text-sm font-medium border border-primary text-primary rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+              className="ml-4 px-5 py-2 text-sm font-medium bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all duration-300"
             >
               Resume
             </a>
@@ -65,7 +62,7 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -74,14 +71,14 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border animate-fade-in">
-            <div className="flex flex-col gap-4">
+          <div className="md:hidden py-4 border-t border-border/50 bg-black/95 animate-fade-in">
+            <div className="flex flex-col gap-1">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-muted-foreground hover:text-primary transition-colors py-2"
+                  className="text-muted-foreground hover:text-foreground hover:bg-card/50 transition-colors py-3 px-4 rounded-lg"
                 >
                   {link.name}
                 </a>
@@ -90,7 +87,7 @@ const Navigation = () => {
                 href="/Kaif_Khurshid_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 text-sm font-medium border border-primary text-primary rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-center mt-2"
+                className="mt-4 px-5 py-3 text-sm font-medium bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all duration-300 text-center"
               >
                 Resume
               </a>
