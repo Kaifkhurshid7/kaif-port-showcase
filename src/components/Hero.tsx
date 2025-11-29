@@ -22,26 +22,21 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Greeting */}
-          <p className="text-primary font-mono text-sm md:text-base mb-4 animate-fade-in">
-            Hi, my name is
-          </p>
-          
           {/* Name */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 animate-slide-up">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-3 animate-slide-up tracking-tight">
             Kaif Khurshid
           </h1>
           
           {/* Title */}
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-muted-foreground mb-6 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-            I build things for the <span className="text-gradient">backend</span>.
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-medium text-primary mb-6 animate-slide-up tracking-wide" style={{ animationDelay: "0.1s" }}>
+            Software Development Engineer
           </h2>
           
           {/* Description */}
           <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-8 leading-relaxed animate-slide-up" style={{ animationDelay: "0.2s" }}>
             Backend-oriented Software Engineer skilled in{" "}
-            <span className="text-primary">Python</span>,{" "}
-            <span className="text-primary">Java</span>, and scalable system design, 
+            <span className="text-primary font-medium">Python</span>,{" "}
+            <span className="text-primary font-medium">Java</span>, and scalable system design, 
             with strong DSA fundamentals and hands-on experience building reliable, 
             high-performance applications.
           </p>
@@ -97,19 +92,13 @@ const Hero = () => {
             </a>
           </div>
           
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: "0.5s" }}>
+          {/* CTA Button */}
+          <div className="animate-slide-up" style={{ animationDelay: "0.5s" }}>
             <a
               href="#projects"
-              className="px-8 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-all duration-300 glow-effect hover-lift w-full sm:w-auto text-center"
+              className="inline-flex px-8 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-all duration-300 glow-effect hover-lift"
             >
-              View My Work
-            </a>
-            <a
-              href="#contact"
-              className="px-8 py-3 border border-border text-foreground font-medium rounded-lg hover:border-primary hover:text-primary transition-all duration-300 w-full sm:w-auto text-center"
-            >
-              Get In Touch
+              View My Projects
             </a>
           </div>
         </div>
