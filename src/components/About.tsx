@@ -1,21 +1,3 @@
-import { Code, Server, Database, Cloud } from "lucide-react";
-const highlights = [{
-  icon: Code,
-  title: "Clean Code",
-  description: "Writing maintainable, efficient, and well-documented code"
-}, {
-  icon: Server,
-  title: "Backend Systems",
-  description: "Building scalable APIs and server-side applications"
-}, {
-  icon: Database,
-  title: "Database Design",
-  description: "Designing efficient schemas and optimizing queries"
-}, {
-  icon: Cloud,
-  title: "Cloud Deployment",
-  description: "Deploying and managing applications on AWS and other platforms"
-}];
 const About = () => {
   return <section id="about" className="section-padding relative">
       <div className="container-custom">
@@ -57,7 +39,12 @@ const About = () => {
 
             {/* Tech List */}
             <ul className="grid grid-cols-2 gap-2 mt-4">
-              {["Python", "Java", "Node.js", "PostgreSQL", "Docker", "AWS"].map(tech => {})}
+              {["Python", "Java", "Node.js", "PostgreSQL", "Docker", "AWS"].map(tech => (
+                <li key={tech} className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <span className="text-primary">▹</span>
+                  {tech}
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -75,10 +62,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Highlights Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
-          {highlights.map((item, index) => {})}
-        </div>
       </div>
     </section>;
 };
