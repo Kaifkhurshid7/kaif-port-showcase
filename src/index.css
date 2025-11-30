@@ -15,34 +15,34 @@
     --popover: 0 0% 4%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 160 84% 39%;
-    --primary-foreground: 0 0% 2%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 6%;
     --secondary-foreground: 0 0% 98%;
 
     --muted: 0 0% 10%;
-    --muted-foreground: 0 0% 50%;
+    --muted-foreground: 0 0% 55%;
 
-    --accent: 160 84% 39%;
-    --accent-foreground: 0 0% 2%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 0 0% 12%;
     --input: 0 0% 12%;
-    --ring: 160 84% 39%;
+    --ring: 217 91% 60%;
 
     --radius: 0.75rem;
 
     /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(160 84% 39%), hsl(170 80% 35%));
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(230 80% 55%));
     --gradient-card: linear-gradient(145deg, hsl(0 0% 5%), hsl(0 0% 2%));
-    --gradient-hero: radial-gradient(ellipse at top, hsl(160 84% 39% / 0.06), transparent 60%);
-    --gradient-glow: radial-gradient(circle, hsl(160 84% 39% / 0.08), transparent 70%);
+    --gradient-hero: radial-gradient(ellipse at top, hsl(217 91% 60% / 0.06), transparent 60%);
+    --gradient-glow: radial-gradient(circle, hsl(217 91% 60% / 0.08), transparent 70%);
     
-    --shadow-glow: 0 0 60px -15px hsl(160 84% 39% / 0.4);
+    --shadow-glow: 0 0 60px -15px hsl(217 91% 60% / 0.4);
     --shadow-card: 0 4px 24px -6px hsl(0 0% 0% / 0.8);
     --shadow-card-hover: 0 12px 40px -8px hsl(0 0% 0% / 0.9);
     
@@ -127,7 +127,7 @@
   }
 
   .section-padding {
-    @apply py-20 md:py-28 lg:py-32;
+    @apply py-14 md:py-20 lg:py-24;
   }
 
   .container-custom {
