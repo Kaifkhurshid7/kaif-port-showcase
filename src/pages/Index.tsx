@@ -6,22 +6,18 @@ import Projects from "@/components/Projects";
 import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navigation />
       <main>
         <Hero />
-        <About />
+        
         <Skills />
         <Projects />
         <Education />
         <Contact />
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;

@@ -21,8 +21,7 @@ const About = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="flex items-center gap-4 mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground whitespace-nowrap">
-            <span className="text-primary font-mono text-xl">01.</span> About Me
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground whitespace-nowrap"> About Me<span className="text-primary font-mono text-xl">01.</span> About Me
           </h2>
           <div className="h-px bg-border flex-1 max-w-md" />
         </div>
@@ -57,10 +56,7 @@ const About = () => {
 
             {/* Tech List */}
             <ul className="grid grid-cols-2 gap-2 mt-4">
-              {["Python", "Java", "Node.js", "PostgreSQL", "Docker", "AWS"].map(tech => <li key={tech} className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <span className="text-primary">▹</span>
-                    <span className="font-mono">{tech}</span>
-                  </li>)}
+              {["Python", "Java", "Node.js", "PostgreSQL", "Docker", "AWS"].map(tech => {})}
             </ul>
           </div>
 
