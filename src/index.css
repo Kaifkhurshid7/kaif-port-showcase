@@ -6,45 +6,45 @@
 
 @layer base {
   :root {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 95%;
+    --background: 0 0% 2%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 5%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 5%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 174 72% 50%;
-    --primary-foreground: 0 0% 0%;
+    --primary: 160 84% 39%;
+    --primary-foreground: 0 0% 2%;
 
-    --secondary: 0 0% 8%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 0 0% 6%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 55%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 50%;
 
-    --accent: 174 72% 50%;
-    --accent-foreground: 0 0% 0%;
+    --accent: 160 84% 39%;
+    --accent-foreground: 0 0% 2%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 174 72% 50%;
+    --border: 0 0% 12%;
+    --input: 0 0% 12%;
+    --ring: 160 84% 39%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(174 72% 50%), hsl(180 80% 45%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 6%), hsl(0 0% 3%));
-    --gradient-hero: radial-gradient(ellipse at top, hsl(174 72% 50% / 0.08), transparent 50%);
-    --gradient-glow: radial-gradient(circle, hsl(174 72% 50% / 0.12), transparent 70%);
+    --gradient-primary: linear-gradient(135deg, hsl(160 84% 39%), hsl(170 80% 35%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 5%), hsl(0 0% 2%));
+    --gradient-hero: radial-gradient(ellipse at top, hsl(160 84% 39% / 0.06), transparent 60%);
+    --gradient-glow: radial-gradient(circle, hsl(160 84% 39% / 0.08), transparent 70%);
     
-    --shadow-glow: 0 0 50px -12px hsl(174 72% 50% / 0.35);
-    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.6);
-    --shadow-card-hover: 0 8px 30px -4px hsl(0 0% 0% / 0.7);
+    --shadow-glow: 0 0 60px -15px hsl(160 84% 39% / 0.4);
+    --shadow-card: 0 4px 24px -6px hsl(0 0% 0% / 0.8);
+    --shadow-card-hover: 0 12px 40px -8px hsl(0 0% 0% / 0.9);
     
     --font-display: 'Inter', system-ui, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
@@ -66,16 +66,36 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-family: var(--font-display);
-    letter-spacing: -0.01em;
+    letter-spacing: -0.015em;
+    line-height: 1.6;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    letter-spacing: -0.02em;
-    font-weight: 600;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+    line-height: 1.1;
   }
 
   ::selection {
-    @apply bg-primary/30 text-foreground;
+    @apply bg-primary/40 text-foreground;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
   }
 }
 
