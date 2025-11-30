@@ -17,11 +17,11 @@ const Hero = () => {
           <div className="mb-10 animate-fade-in">
             <div className="w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full border-2 border-primary/30 overflow-hidden bg-gradient-to-br from-card to-background relative group shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
-              <div className="absolute inset-[2px] rounded-full bg-card flex items-center justify-center">
-                <span className="text-5xl md:text-6xl font-bold text-gradient">KK</span>
-              </div>
-              {/* Replace the div above with an img tag when you have your photo */}
-              {/* <img src="/your-photo.jpg" alt="Kaif Khurshid" className="w-full h-full object-cover" /> */}
+              <img 
+                src="/profile.jpg" 
+                alt="Kaif Khurshid" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
