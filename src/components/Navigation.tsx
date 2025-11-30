@@ -23,9 +23,9 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-black/90 backdrop-blur-xl border-b border-border/50"
+          ? "bg-background/80 backdrop-blur-xl border-b border-border/30 shadow-lg shadow-background/50"
           : "bg-transparent"
       }`}
     >
@@ -44,7 +44,7 @@ const Navigation = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-card/50"
+                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-card/50 tracking-wide"
               >
                 {link.name}
               </a>
@@ -53,7 +53,7 @@ const Navigation = () => {
               href="/Kaif_Khurshid_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-4 px-5 py-2 text-sm font-medium bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all duration-300"
+              className="ml-4 px-6 py-2.5 text-sm font-semibold bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all duration-300 tracking-wide"
             >
               Resume
             </a>
@@ -71,14 +71,14 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border/50 bg-black/95 animate-fade-in">
-            <div className="flex flex-col gap-1">
+          <div className="md:hidden py-6 border-t border-border/30 bg-background/95 backdrop-blur-xl animate-fade-in">
+            <div className="flex flex-col gap-2">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-muted-foreground hover:text-foreground hover:bg-card/50 transition-colors py-3 px-4 rounded-lg"
+                  className="text-muted-foreground hover:text-foreground hover:bg-card/50 transition-colors py-3 px-4 rounded-lg tracking-wide"
                 >
                   {link.name}
                 </a>
@@ -87,7 +87,7 @@ const Navigation = () => {
                 href="/Kaif_Khurshid_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 px-5 py-3 text-sm font-medium bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all duration-300 text-center"
+                className="mt-4 px-6 py-3 text-sm font-semibold bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all duration-300 text-center tracking-wide"
               >
                 Resume
               </a>
