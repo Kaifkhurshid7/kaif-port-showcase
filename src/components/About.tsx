@@ -52,7 +52,7 @@ const About = () => {
               </div>
 
               {/* Decorative Border */}
-              <div className="absolute top-4 left-4 w-full h-full border-2 border-primary rounded-lg -z-10 transition-all duration-300 group-hover:top-2 group-hover:left-2" />
+              
             </div>
           </div>
         </div>

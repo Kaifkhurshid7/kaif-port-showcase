@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Download, Star } from "lucide-react";
+import { ExternalLink, Github, Star } from "lucide-react";
 const projects = [{
   title: "Simple Paintball",
   description: "Developed a Minecraft server plugin to entertain kids during free time. Published to websites gaining 2K+ downloads and an average 4.5/5-star review.",
@@ -47,16 +47,7 @@ const Projects = () => {
                     </div>
                     
                     {/* Stats Badge */}
-                    {project.stats && <div className="flex items-center gap-4 text-sm">
-                        <div className="flex items-center gap-1 text-muted-foreground">
-                          <Download size={14} className="text-primary" />
-                          <span>{project.stats.downloads}</span>
-                        </div>
-                        <div className="flex items-center gap-1 text-muted-foreground">
-                          <Star size={14} className="text-primary fill-primary" />
-                          <span>{project.stats.rating}</span>
-                        </div>
-                      </div>}
+                    {project.stats}
                   </div>
 
                   <p className="text-muted-foreground mb-4 leading-relaxed">
