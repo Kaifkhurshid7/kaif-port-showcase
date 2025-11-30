@@ -28,9 +28,9 @@ const Contact = () => {
     <section id="contact" className="section-padding relative">
       <div className="container-custom">
         {/* Section Header */}
-        <div className="flex items-center gap-4 mb-12">
+        <div className="flex items-center gap-4 mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground whitespace-nowrap">
-            <span className="text-primary font-mono text-xl">05.</span> Get In Touch
+            Get In Touch
           </h2>
           <div className="h-px bg-border flex-1 max-w-md" />
         </div>

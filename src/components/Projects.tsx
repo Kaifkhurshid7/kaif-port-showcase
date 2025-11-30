@@ -22,8 +22,9 @@ const Projects = () => {
   return <section id="projects" className="section-padding relative">
       <div className="container-custom">
         {/* Section Header */}
-        <div className="flex items-center gap-4 mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground whitespace-nowrap">Projects<span className="text-primary font-mono text-xl">03.</span> Featured Projects
+        <div className="flex items-center gap-4 mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground whitespace-nowrap">
+            Featured Projects
           </h2>
           <div className="h-px bg-border flex-1 max-w-md" />
         </div>
