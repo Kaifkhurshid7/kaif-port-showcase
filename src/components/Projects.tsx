@@ -47,7 +47,13 @@ const Projects = () => {
                     </div>
                     
                     {/* Stats Badge */}
-                    {project.stats}
+                    {project.stats && (
+                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <span>{project.stats.downloads} downloads</span>
+                        <span>•</span>
+                        <span>{project.stats.rating} rating</span>
+                      </div>
+                    )}
                   </div>
 
                   <p className="text-muted-foreground mb-4 leading-relaxed">
